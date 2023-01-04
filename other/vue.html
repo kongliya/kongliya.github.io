@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue面试题总结 | 孔孔.</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="孔孔's blog.">
+    <link rel="preload" href="/assets/css/0.styles.abfd12c2.css" as="style"><link rel="preload" href="/assets/js/app.34ec9d93.js" as="script"><link rel="preload" href="/assets/js/2.a95f0000.js" as="script"><link rel="preload" href="/assets/js/5.0edfab2f.js" as="script"><link rel="prefetch" href="/assets/js/10.e4f2fbec.js"><link rel="prefetch" href="/assets/js/11.c70c3046.js"><link rel="prefetch" href="/assets/js/12.a2f0dd35.js"><link rel="prefetch" href="/assets/js/13.025223fe.js"><link rel="prefetch" href="/assets/js/14.99ba377c.js"><link rel="prefetch" href="/assets/js/15.48cbe60c.js"><link rel="prefetch" href="/assets/js/16.e31d64ea.js"><link rel="prefetch" href="/assets/js/17.d46d467d.js"><link rel="prefetch" href="/assets/js/18.2f2851d0.js"><link rel="prefetch" href="/assets/js/19.7654b033.js"><link rel="prefetch" href="/assets/js/20.ffe15c90.js"><link rel="prefetch" href="/assets/js/21.e9d52d01.js"><link rel="prefetch" href="/assets/js/3.09ee304c.js"><link rel="prefetch" href="/assets/js/4.63b8f2b8.js"><link rel="prefetch" href="/assets/js/6.bc8590aa.js"><link rel="prefetch" href="/assets/js/7.c83e90fb.js"><link rel="prefetch" href="/assets/js/8.98b1d132.js"><link rel="prefetch" href="/assets/js/9.4eb3a41a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.abfd12c2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">孔孔.</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue 3.0
+</a></div><div class="nav-item"><a href="/nodejs/" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/other/" class="nav-link router-link-active">
+  Other
+</a></div><div class="nav-item"><a href="https://github.com/kongliya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue 3.0
+</a></div><div class="nav-item"><a href="/nodejs/" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/other/" class="nav-link router-link-active">
+  Other
+</a></div><div class="nav-item"><a href="https://github.com/kongliya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/other/" aria-current="page" class="sidebar-link">一些小东西</a></li><li><a href="/other/http.html" class="sidebar-link">网络协议一些东西</a></li><li><a href="/other/vue.html" aria-current="page" class="active sidebar-link">Vue面试题总结</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/other/vue.html#_1-三大框架（react-angular-vue）对比？" class="sidebar-link">1. 三大框架（react/angular/vue）对比？</a></li><li class="sidebar-sub-header"><a href="/other/vue.html#_2-虚拟dom" class="sidebar-link">2. 虚拟DOM?</a></li><li class="sidebar-sub-header"><a href="/other/vue.html#_3-vue之中如何实现mvvm？" class="sidebar-link">3. vue之中如何实现MVVM？</a></li><li class="sidebar-sub-header"><a href="/other/vue.html#_4-mvc-mvp-mvvm对比？" class="sidebar-link">4. MVC MVP MVVM对比？</a></li><li class="sidebar-sub-header"><a href="/other/vue.html#_5-为什么vue组件中的data是一个函数？" class="sidebar-link">5. 为什么vue组件中的data是一个函数？</a></li><li class="sidebar-sub-header"><a href="/other/vue.html#_6-组件间传值？" class="sidebar-link">6. 组件间传值？</a></li><li class="sidebar-sub-header"><a href="/other/vue.html#_7-老生常谈：生命周期。" class="sidebar-link">7. 老生常谈：生命周期。</a></li><li class="sidebar-sub-header"><a href="/other/vue.html#_8-路由？" class="sidebar-link">8. 路由？</a></li><li class="sidebar-sub-header"><a href="/other/vue.html#_9-vuex" class="sidebar-link">9. Vuex</a></li><li class="sidebar-sub-header"><a href="/other/vue.html#_10-axios和ajax区别？" class="sidebar-link">10. axios和ajax区别？</a></li><li class="sidebar-sub-header"><a href="/other/vue.html#_11-methods、computed、watch区别" class="sidebar-link">11. methods、computed、watch区别</a></li><li class="sidebar-sub-header"><a href="/other/vue.html#_12-set在vue里是如何实现的-做了什么？" class="sidebar-link">12. $set在vue里是如何实现的 做了什么？</a></li></ul></li><li><a href="/other/webrtc.html" class="sidebar-link">WebRTC</a></li><li><a href="/other/linux.html" class="sidebar-link">linux简单命令记录</a></li><li><a href="/other/angular.html" class="sidebar-link">angular4配置环境变量</a></li><li><a href="/other/flutter.html" class="sidebar-link">flutter</a></li><li><a href="/other/webpack.html" class="sidebar-link">webpack配置多环境变量</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue面试题总结"><a href="#vue面试题总结" class="header-anchor">#</a> Vue面试题总结</h1> <p>迫于生计，总结一波vue的面试题。（纯属自己手动为了方便总结）</p> <h2 id="_1-三大框架（react-angular-vue）对比？"><a href="#_1-三大框架（react-angular-vue）对比？" class="header-anchor">#</a> 1. 三大框架（react/angular/vue）对比？</h2> <p>react：描述的是单向数据流，API简单，但是编程起来模式比较复杂；</p> <p>angular：是一种强类型的编程语言，学习曲线比较陡峭；</p> <p>vue：适合入门，但是也有一些高级的东西在里边。</p> <table><thead><tr><th></th> <th>Angular</th> <th>React</th> <th>Vue</th></tr></thead> <tbody><tr><td>组织方式</td> <td>MVC</td> <td>模块化</td> <td>模块化</td></tr> <tr><td>数据绑定</td> <td>双向绑定</td> <td>单向绑定</td> <td>双向绑定</td></tr> <tr><td>模板能力</td> <td>强大</td> <td>自由(JSX)</td> <td>自由</td></tr> <tr><td>自由度</td> <td>较小</td> <td>大</td> <td>较大</td></tr> <tr><td>路由</td> <td>静态路由</td> <td>动态路由</td> <td>动态路由</td></tr></tbody></table> <h2 id="_2-虚拟dom"><a href="#_2-虚拟dom" class="header-anchor">#</a> 2. 虚拟DOM?</h2> <p>就是将DOM操作成一个对象，把对象拿出来做处理，不直接操作DOM，极大地提升DOM性能，将多次DOM操作最后变成一次DOM操作。</p> <p>步骤：</p> <ol><li>根据现有的模板创建DOM树</li></ol> <p>2）进行初始化渲染（循环遍历发生一次DOM操作）变成HTML</p> <p>3）数据发生变化，生成新的DOM树</p> <p>4）根据上一次虚拟DOM结构树结合数据的变化生成一个新的虚拟DOM结果</p> <p>5）将此次的虚拟DOM结构进行比对（diff算法）将不一样的地方重新渲染</p> <h2 id="_3-vue之中如何实现mvvm？"><a href="#_3-vue之中如何实现mvvm？" class="header-anchor">#</a> 3. vue之中如何实现MVVM？</h2> <p>底层原理：双向数据绑定；</p> <p>1）首先是MVVM之中存在的一种特质，这种特质的实现是VM层和view层去进行通信而产生的；依赖于ES5的方法Object.defineProperty()；根据Object.defineProperty()监听对象中的某一个属性，一旦属性翻遍了，那么我们的set和get也会做出相应改变；</p> <p>2）观察者模式：view和model互为订阅者，一旦data之中的数据发生改变，发布给所有订阅过的view，如果一旦view里的数据改变的时候，他也会直接发布给data里的数据；</p> <p>3）data之中多了set、get和observer都是Object.defineProperty()加上去的。</p> <h2 id="_4-mvc-mvp-mvvm对比？"><a href="#_4-mvc-mvp-mvvm对比？" class="header-anchor">#</a> 4. MVC MVP MVVM对比？</h2> <p>MVC:</p> <p><img src="/assets/img/MVC.3019b021.png" alt="MVC-阮一峰"></p> <ol><li><p>view传送指令到 controller</p></li> <li><p>controller完成业务逻辑之后要求model改变状态</p></li> <li><p>model将新的数据发送到view，用户得到反馈</p> <p>这个时候所有的通信都是单向的。</p></li></ol> <p>MVP:</p> <p><img src="/assets/img/MVP.7ce043a7.png" alt="MVP-阮一峰"></p> <ol><li>各部分之间的通信都是双向的；</li> <li>view和model层不发生联系，都通过Presenter传递（好比相亲，男女不见面，都通过媒婆传递）；</li> <li>view层非常薄，不部署任何业务逻辑，而相反Presenter层非常厚，所有的业务逻辑都部署在那里。</li></ol> <p>MVVM：</p> <p><img src="/assets/img/MVVM.86c7b912.png" alt="MVVM-阮一峰"></p> <ol><li>双向数据绑定；</li> <li>单线双箭头：表示一个数据发生改变，那么另一个数据无条件进行改变；</li> <li>双线双向箭头：表示一个数据发生改变时，通知另一个数据进行改变。（需要手动操作才能改变更新数据）</li></ol> <h2 id="_5-为什么vue组件中的data是一个函数？"><a href="#_5-为什么vue组件中的data是一个函数？" class="header-anchor">#</a> 5. 为什么vue组件中的data是一个函数？</h2> <p>当组件中的data写成一个函数时，每次data都是以函数的形式返回一份新的data，组件复用时，每个组件实例都可以单独维护自己的数据，做到互不干扰，而如果以对象返回的话，使得所有的组件实例共用了一份数据，一动则全都变。</p> <h2 id="_6-组件间传值？"><a href="#_6-组件间传值？" class="header-anchor">#</a> 6. 组件间传值？</h2> <ol><li><p>父传子：</p> <p>props传值，父级在props进行传值，子级组件在组件内接收再验证最后使用数据；</p></li> <li><p>子传父：</p> <p>引用地址传值：父级构建一个引用类型data{setter，getter，observer}，引用地址传递给子级，当子级更改，引用地址里边的数据的时候，oberser就会通知到父级数据更新；</p> <p>chain模式传值：每个实例都存在一个链，这个链是以家族关系描述的关系；$parents  $children $root通过这些链可以找到嵌套关系中的任意一个组件；</p> <p>$ref链：在模板结构上标记属性ref，在组件的$refs之中可以非常方便准确的找到所有ref链的组件；</p> <p>函数传值方式：父级组件之中，定义一个变量（用来接收变化的值）和一个函数（用来改变刚才的值），把这个函数传递给子级，让自己调用这个函数从而实现值的改变。</p> <p>on,$emit： 给子级定义一个事件，事件处理函数是可以改变父级数据的函数，在自己需要的时候，触发函数。</p></li> <li><p>任意组件之间的传值：</p> <p>event bus事件总线：定义一个公用的事件的载体，这个载体在任何地方都可以访问。在要改变数据的组件上绑定事件，在改变数据的组件上触发事件。</p></li></ol> <h2 id="_7-老生常谈：生命周期。"><a href="#_7-老生常谈：生命周期。" class="header-anchor">#</a> 7. 老生常谈：生命周期。</h2> <ol><li><p>beforeCreate：初始化了事件和生命周期；</p></li> <li><p>created：可以访问到数据还是无法获取DOM元素；</p></li> <li><p>beforeMount：此时虚拟DOM已构建好但是没有放入页面（此时可以判断一下当前页面的数据和更新的数据是否一致，如果一致则可以不执行某些功能）；</p></li> <li><p>mounted：此时虚拟DOM已放入页面，至此，初始化阶段全部结束。</p></li> <li><p>beforeUpdate：data被更新，触发update；</p></li> <li><p>updated：虚拟DOM被重新渲染；</p></li> <li><p>beforeDetroy：当检测到指令$destroy被调用时；</p></li> <li><p>destroyed：移除所有的子组件和事件监听。</p> <p>使用场景：一般来说，我们销毁组件以后，并不会关闭掉定时器，所以可以在该声明周期中手动关掉定时器。</p></li></ol> <h2 id="_8-路由？"><a href="#_8-路由？" class="header-anchor">#</a> 8. 路由？</h2> <ol><li><p>什么是路由？</p> <p>根据不同的url展示页面或者数据；</p> <p>路由分前端路由和后端路由；前端路由多用于单页面开发(SPA)，并且前端路由是不涉及服务器的，是前端利用hash或者h5的historyAPI来实现的，一般用于不同内容的展示和切换；</p></li> <li><p>路由跳转方式？</p> <ol><li>a标签跳转；</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;a href=&quot;#/home&quot;&gt;首页&lt;/a&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="2"><li>router-link跳转；</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;router-link to='/home'&gt;&lt;/router-link&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="3"><li>编程式路由；</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.$router.push()  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>​	此处说明下$route和$router区别（因为鄙人不才一直混）：当我们在vue之中打印this时会有$route和$router等相关信息；$route显示我们路由的配置与参数；而$router是路由的一个实例化对象，里边放的是方法</p></li> <li><p>路由传值：</p> <ol><li>path路径传值；</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>path:&quot;/home/:id/name&quot;,
+接收的时候通过 this.$route.params;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="2"><li>query传值；</li></ol> <p>因为在url之中?后边的参数不会被解析，因此我们可以通过query传值，接收的时候通过this.$route.query;</p> <ol start="3"><li><p>路由解耦；
+在配置路由的时候添加props属性为true，在需要接受参数的组件页面通过props进行接受；</p></li> <li><p>编程式导航；</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.$router.push({path:&quot;/home&quot;,query:{}});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>路由配置项常用的属性以及作用；</p> <p>路由配置参数：</p> <p>path: 跳转路径；</p> <p>component：路径相对于的组件；</p> <p>name：命名路由；</p> <p>children：子路由的配置参数（路由嵌套）；</p> <p>props：路由解耦；</p> <p>redirect：重定向路由；</p></li> <li><p>如何检测路由参数的变化？</p> <p>通过属性监听来实现或者beforeRouterUpdate();</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>watch:{
+    &quot;$router&quot;(){
+
+    }
+}
+beforeRouterUpdate(to,from,next);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></li> <li><p>路由守卫？</p> <p>路由跳转前后做的一些验证；</p> <p>路由常见的钩子函数：beforeRouteEnter、beforeRouteUpdate、beforeRouteLeave</p> <p>beforeRouteEnter: 在渲染该组件的对应路由被confirm前调用，不能或者组件实例this（因为守卫执行前，组件实例还没被创建）；</p> <p>beforeRouteUpdate：当前路由改变，但是该组件复用时调用，可以访问组件实例this；</p> <p>beforeRouteLeave：导航离开该组件的对应路由时调用，可以访问组件实例this；（场景：用户没有支付离开时、用户填完信息没有保存时候等等）</p> <p>全局守卫：router.beforeEach();</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const router = new VueRouter({.....})
+router.beforeEach((to,from,next)=&gt;{
+    .......
+})
+参数to：到哪里去；
+参数from：从哪里来；
+参数next：Fuction; 一定要调用该方法来resolve这个钩子；
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>全局后置钩子：router.afterEach();</p> <p>和守卫的区别是：这些钩子不会接受next函数也不会改变导航本身。</p></li></ol> <h2 id="_9-vuex"><a href="#_9-vuex" class="header-anchor">#</a> 9. Vuex</h2> <p>想放个图，就是很经典的那个图，一看就懂的那个 但是 路径问题怎么搞还是不知道，So.....先文字描述吧；</p> <p>首先：Vuex是状态管理器；</p> <p>其次，为什么用？</p> <p>===&gt;</p> <p>vue是单向数据流；</p> <ol><li><p>当我们处理大量数据时，传参的方法对于多层嵌套来说是非常繁琐的，而且兄弟间的状态传递是无能为力的；</p></li> <li><p>我们经常会采用父子组件直接引用或者通过事件来变更和同步状态的多份拷贝；</p> <p>而以上模式都非常脆弱，会造成无法维护的代码。</p> <p>所以，我们将组件的共享状态拿出来以一个全局单例模式管理。</p></li></ol> <p>再次，有哪些东西？</p> <ol><li>state：数据源存放地，对应于一般vue对象里的data；存放公共的状态；</li> <li>getter：相当于计算属性，所以，getter的返回值会根据它的依赖被缓存起来，且只有当他的依赖值发生改变了才会被重新计算；</li> <li>mutation：只是用来修改数据的，数据的修改必须通过mutation；俩参数：state，params；</li> <li>action：大多数时候用来处理异步操作；</li> <li>module：有时候我们应用的所有状态可能会集中到一个比较大的对象。当应用复杂时，store会很臃肿，所以我们将store分割成模块，就像我们在文件夹之中建立子文件夹B一样，目的都是方便管理。</li></ol> <p>数据传递过程：</p> <p>当组件进行数据修改的时候我们需要调用Dispatch来触发actions里边的方法，actions里的每个方法都有一个commit方法，当方法执行的时候，通过commit来触发mutation里边的方法进行数据修改，mutation里都每个函数都有一个state参数，进行数据修改，数据修改完毕以后，会渲染到页面，页面的数据也会发生改变。</p> <h2 id="_10-axios和ajax区别？"><a href="#_10-axios和ajax区别？" class="header-anchor">#</a> 10. axios和ajax区别？</h2> <ol><li><p>axios的优点：</p> <p>从nodejs之中创建http请求；</p> <p>支持promiseAPI；</p> <p>提供了一些并发请求的接口；</p> <p>自动转换json数据；</p> <p>客户端支持防止CSRF/XSRF攻击；</p></li> <li><p>ajax的缺点：</p> <p>jquery一整个库因为单纯想用ajax就引入项目不合理；</p> <p>基于原生的XHR开发，但是 XHR 架构并不清晰；</p></li></ol> <h2 id="_11-methods、computed、watch区别"><a href="#_11-methods、computed、watch区别" class="header-anchor">#</a> 11. methods、computed、watch区别</h2> <p>methods是个方法 执行的时候需要事件进行<br>
+computed是一个计算属性，是实时响应的，只要data中属性发生了变化那么就会触发computed，计算属性也是基于属性的依赖进行缓存。methods调用的时候加 () , 而computed调用的时候是不需要加()<br>
+watch属性监听，watch用来监听属性的变化，当值发生变化的时候来执行特定的函数，watch监听属性的时候会有两个参数 newVal和oldVal一个新值一个旧值；</p> <h2 id="_12-set在vue里是如何实现的-做了什么？"><a href="#_12-set在vue里是如何实现的-做了什么？" class="header-anchor">#</a> 12. $set在vue里是如何实现的 做了什么？</h2> <p>今天被问到了 而我不会 之前也没考虑到 为自己的不刨根问底深究惭愧三秒钟..
+好了 惭愧结束 开始做功课--</p> <p>Vue 双向数据绑定的原理是通过遍历data属性，利用Object.definePrototype将其转化成setter/getter,但是由于现代js的限制以及object.observe的限制，vue无法检测到对象属性的添加或删除。<br>
+这个时候 vue内部的实现如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>export function set(target: Array&lt;any&gt; | Object, key: any, val: any): any { 
+ // target 为数组 
+ if (Array.isArray(target) &amp;&amp; isValidArrayIndex(key)) {   
+  // 修改数组的长度, 避免索引&gt;数组长度导致splice()执行有误   
+   target.length = Math.max(target.length, key);   
+  // 利用数组的splice变异方法触发响应式   
+  target.splice(key, 1, val);  
+   return val; 
+  } 
+  // target为对象, key在target或者target.prototype上 且必须不能在 Object.prototype 上,直接赋值 
+ 	if (key in target &amp;&amp; !(key in Object.prototype)) {    
+ 	target[key] = val;   
+  	return val; 
+ }  
+ // 以上都不成立, 即开始给target创建一个全新的属性 
+  // 获取Observer实例 
+  const ob = (target: any).__ob__;  
+  // target 本身就不是响应式数据, 直接赋值 
+   if (!ob) {  
+     target[key] = val;  
+     return val;
+   }  
+   // 进行响应式处理
+     defineReactive(ob.value, key, val);
+     ob.dep.notify(); 
+      return val;
+  } 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><ul><li>如果目标是数组，使用vue实现的变异方法splice实现响应式</li> <li>如果目标是对象，判断属性存在，即为响应式，直接赋值</li> <li>如果target本身就不是响应式，直接赋值</li> <li>如果属性不是响应式，则调用defineReactive方法进行响应式处理</li></ul> <p>补充：defineReactive</p> <p>defineReactive() 就是用于定义响应式数据的核心函数。它主要做的事情包括：</p> <p>1.新建一个 dep 对象，与当前数据对应</p> <p>2.通过 Object.defineProperty() 重新定义对象属性，配置属性的 set、get，从而数据被获取、设置时可以执行 Vue 的代码</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/other/http.html" class="prev">
+        网络协议一些东西
+      </a></span> <span class="next"><a href="/other/webrtc.html">
+        WebRTC
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.34ec9d93.js" defer></script><script src="/assets/js/2.a95f0000.js" defer></script><script src="/assets/js/5.0edfab2f.js" defer></script>
+  </body>
+</html>

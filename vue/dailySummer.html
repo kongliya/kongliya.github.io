@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue项目日常总结 | 孔孔.</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="孔孔's blog.">
+    <link rel="preload" href="/assets/css/0.styles.abfd12c2.css" as="style"><link rel="preload" href="/assets/js/app.34ec9d93.js" as="script"><link rel="preload" href="/assets/js/2.a95f0000.js" as="script"><link rel="preload" href="/assets/js/19.7654b033.js" as="script"><link rel="prefetch" href="/assets/js/10.e4f2fbec.js"><link rel="prefetch" href="/assets/js/11.c70c3046.js"><link rel="prefetch" href="/assets/js/12.a2f0dd35.js"><link rel="prefetch" href="/assets/js/13.025223fe.js"><link rel="prefetch" href="/assets/js/14.99ba377c.js"><link rel="prefetch" href="/assets/js/15.48cbe60c.js"><link rel="prefetch" href="/assets/js/16.e31d64ea.js"><link rel="prefetch" href="/assets/js/17.d46d467d.js"><link rel="prefetch" href="/assets/js/18.2f2851d0.js"><link rel="prefetch" href="/assets/js/20.ffe15c90.js"><link rel="prefetch" href="/assets/js/21.e9d52d01.js"><link rel="prefetch" href="/assets/js/3.09ee304c.js"><link rel="prefetch" href="/assets/js/4.63b8f2b8.js"><link rel="prefetch" href="/assets/js/5.0edfab2f.js"><link rel="prefetch" href="/assets/js/6.bc8590aa.js"><link rel="prefetch" href="/assets/js/7.c83e90fb.js"><link rel="prefetch" href="/assets/js/8.98b1d132.js"><link rel="prefetch" href="/assets/js/9.4eb3a41a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.abfd12c2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">孔孔.</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  Vue 3.0
+</a></div><div class="nav-item"><a href="/nodejs/" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/other/" class="nav-link">
+  Other
+</a></div><div class="nav-item"><a href="https://github.com/kongliya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  Vue 3.0
+</a></div><div class="nav-item"><a href="/nodejs/" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/other/" class="nav-link">
+  Other
+</a></div><div class="nav-item"><a href="https://github.com/kongliya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue/" aria-current="page" class="sidebar-link">打包工具 rollup.js</a></li><li><a href="/vue/vite.html" class="sidebar-link">了解Vite</a></li><li><a href="/vue/vue.html" class="sidebar-link">Vue 3.0</a></li><li><a href="/vue/dailySummer.html" aria-current="page" class="active sidebar-link">vue项目日常总结</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/dailySummer.html#_1-table两列进行级联-select的change事件返回整个item，而不是某个值并返回index" class="sidebar-link">1. table两列进行级联(select的change事件返回整个item，而不是某个值并返回index)</a></li><li class="sidebar-sub-header"><a href="/vue/dailySummer.html#_2-整体页面固定，实现局部滚动效果" class="sidebar-link">2. 整体页面固定，实现局部滚动效果</a></li><li class="sidebar-sub-header"><a href="/vue/dailySummer.html#_3-vue3-x-ref与reactive" class="sidebar-link">3. Vue3.x ref与reactive</a></li><li class="sidebar-sub-header"><a href="/vue/dailySummer.html#_4-vue3-x-proxy响应式取原生值" class="sidebar-link">4. Vue3.x proxy响应式取原生值</a></li><li class="sidebar-sub-header"><a href="/vue/dailySummer.html#_5-vue3-x-element-plus" class="sidebar-link">5. Vue3.x element-plus</a></li><li class="sidebar-sub-header"><a href="/vue/dailySummer.html#_6-vue3-x-userouter" class="sidebar-link">6. Vue3.x useRouter</a></li><li class="sidebar-sub-header"><a href="/vue/dailySummer.html#_7-vue3-x-nexttick-onmounted-forceupdate" class="sidebar-link">7. Vue3.x nextTick onMounted forceUpdate</a></li><li class="sidebar-sub-header"><a href="/vue/dailySummer.html#_8-vue3-x-引入静态文件（背景图）" class="sidebar-link">8. Vue3.x 引入静态文件（背景图）</a></li><li class="sidebar-sub-header"><a href="/vue/dailySummer.html#_9-vue3-x-setup" class="sidebar-link">9. Vue3.x setup</a></li><li class="sidebar-sub-header"><a href="/vue/dailySummer.html#_10-vue3-element-table使用插槽slot方式：-default-scope" class="sidebar-link">10. Vue3 element table使用插槽slot方式：#default=&quot;scope&quot;</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue项目日常总结"><a href="#vue项目日常总结" class="header-anchor">#</a> vue项目日常总结</h1> <h2 id="_1-table两列进行级联-select的change事件返回整个item，而不是某个值并返回index"><a href="#_1-table两列进行级联-select的change事件返回整个item，而不是某个值并返回index" class="header-anchor">#</a> 1. table两列进行级联(select的change事件返回整个item，而不是某个值并返回index)</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- table两列进行级联。select的change事件返回整个item，而不是某个值（并返回index） --&gt;
+&lt;el-table-column
+    label=&quot;费用项（一级支出项）&quot;
+    prop=&quot;level_one_item&quot;
+    min-width=&quot;170px&quot;
+&gt;
+    &lt;template scope=&quot;scope&quot;&gt;
+        &lt;el-select
+            class=&quot;search-field&quot;
+            v-model=&quot;scope.row.level_one_item&quot;
+            placeholder=&quot;请选择费用项（一级支出项）&quot;
+            value-key=&quot;level_one_item_code&quot;
+            @change=&quot;((value)=&gt;{levelOneItemChange(value, scope.$index)})&quot;
+        &gt;
+            &lt;el-option
+            v-for=&quot;item in levelOneItemOptions&quot;
+            :key=&quot;item.level_one_item_code&quot;
+            :label=&quot;item.level_one_item&quot;
+            :value=&quot;item&quot;
+            /&gt;
+        &lt;/el-select&gt;
+    &lt;/template&gt;
+&lt;/el-table-column&gt;
+
+&lt;el-table-column
+    label=&quot;预算费用项目名称（二级支出项）&quot;
+    prop=&quot;level_two_item&quot;
+    min-width=&quot;380px&quot;
+    show-overflow-tooltip
+&gt;
+&lt;template scope=&quot;scope&quot;&gt;
+    &lt;el-input v-model=&quot;scope.row.level_two_item&quot; :placeholder=&quot;scope.row.levelTwoItemInfo || levelTwoItemObj[scope.row.level_one_item_code]&quot;&gt;&lt;/el-input&gt;
+&lt;/template&gt;
+&lt;/el-table-column&gt;
+
+对应关系：
+levelTwoItemObj: {
+    &quot;CustomerFee&quot;:	&quot;xxx1&quot;,
+    &quot;TravelFee&quot;:	&quot;xxx2&quot;,
+    &quot;DailyOfficeFee&quot;:	&quot;xxx3&quot;,
+    &quot;SFMarketActivities&quot;:	&quot;xxx4&quot;,
+    &quot;SFPatientPromotions&quot;:	&quot;xxx5&quot;,
+    &quot;SFHPSupport&quot;:	&quot;xxx6&quot;,
+    &quot;SFDealerPromotions&quot;:	&quot;xxx7&quot;,
+}
+
+js：
+levelOneItemChange(val,idx){
+    this.$set(this.BudgetTableData[idx],&quot;levelTwoItemInfo&quot;,this.levelTwoItemObj[val.level_one_item_code]);
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br></div></div><h2 id="_2-整体页面固定，实现局部滚动效果"><a href="#_2-整体页面固定，实现局部滚动效果" class="header-anchor">#</a> 2. 整体页面固定，实现局部滚动效果</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- 整体思想 --&gt;
+外包围overflow: hidden;
+并且设置宽高均为100%;
+
+内部区域多出后设置overflow: auto;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="_3-vue3-x-ref与reactive"><a href="#_3-vue3-x-ref与reactive" class="header-anchor">#</a> 3. Vue3.x ref与reactive</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- 1. ref通常用于声明基础类型响应式数据。 --&gt;
+import { ref } from 'vue' 
+const age =ref(10) //声明响应式数据
+
+&lt;!-- 2. ref返回的是被包装过的响应式对象，在setup中访问和修改ref需要使用.value属性 --&gt;
+
+age.value.....
+
+&lt;!-- 1. reactive用于声明复杂类型响应式数据。 --&gt;
+mport {reactive} from 'vue'
+
+const man=ref({name:'jolin',age:21}) //声明响应式数据
+
+&lt;!-- 2.reactive返回的是被包装过的响应式对象，在setup中访问和修改直接使用属性即可 --&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>注意事项</p> <p>1.注意不能解构reactive数据，解构出的数据会失去响应式。</p> <p>2.在任何地方访问响应式数据都能拿到最新的。</p> <p>3.同vue2的data，只有数据被应用到模板中时，数据的改变才会触发updated生命周期，否则即使数据被修改了，也不会触发updated生命周期，导致视图不更新。</p> <h2 id="_4-vue3-x-proxy响应式取原生值"><a href="#_4-vue3-x-proxy响应式取原生值" class="header-anchor">#</a> 4. Vue3.x proxy响应式取原生值</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { toRaw } from &quot;@vue/reactivity&quot;;
+const temp = toRaw(xxx)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="_5-vue3-x-element-plus"><a href="#_5-vue3-x-element-plus" class="header-anchor">#</a> 5. Vue3.x element-plus</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { ElMessage, ElMessageBox } from &quot;element-plus&quot;;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="_6-vue3-x-userouter"><a href="#_6-vue3-x-userouter" class="header-anchor">#</a> 6. Vue3.x useRouter</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { useRouter } from 'vue-router';
+const Router = useRouter();
+Router.push(&quot;xxx&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="_7-vue3-x-nexttick-onmounted-forceupdate"><a href="#_7-vue3-x-nexttick-onmounted-forceupdate" class="header-anchor">#</a> 7. Vue3.x nextTick onMounted forceUpdate</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { ref, reactive, onMounted, getCurrentInstance } from &quot;vue&quot;;
+
+const {
+  proxy: { $nextTick, $forceUpdate },
+} = getCurrentInstance();
+
+onMounted(() =&gt; {
+  xxxx();
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_8-vue3-x-引入静态文件（背景图）"><a href="#_8-vue3-x-引入静态文件（背景图）" class="header-anchor">#</a> 8. Vue3.x 引入静态文件（背景图）</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;span class=&quot;card_tag&quot;
+:style=&quot;{'background-image': `url(${require('../../assets/img/order/tagBg.png')})`,}&quot;
+&gt;{{ xxxx }}&lt;/span&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="_9-vue3-x-setup"><a href="#_9-vue3-x-setup" class="header-anchor">#</a> 9. Vue3.x setup</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- 可直接使用不必声明 --&gt;
+&lt;historyPdfView :pdfUrl=&quot;linkAddress&quot; /&gt;
+
+&lt;script setup&gt;
+import { ref, reactive, onMounted, getCurrentInstance } from &quot;vue&quot;;
+import { ApiPostOrderSelect, ApiGetLabel, ApiGetTherapy } from '@/apis';
+import { fenToyuan } from '@/utils';
+import { toRaw } from '@vue/reactivity';
+import { ElMessage } from &quot;element-plus&quot;;
+import { useRouter } from 'vue-router';
+import * as utils from '@/utils'
+&lt;!-- 可直接引入组件 --&gt;
+import xxxx from './components/xxxx.vue';
+
+const Router = useRouter();
+const {
+  proxy: { $nextTick, $forceUpdate },
+} = getCurrentInstance();
+
+let xx = ref(&quot;&quot;);
+
+const xxx = (value, idx) =&gt; {
+}
+
+&lt;/script&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h2 id="_10-vue3-element-table使用插槽slot方式：-default-scope"><a href="#_10-vue3-element-table使用插槽slot方式：-default-scope" class="header-anchor">#</a> 10. Vue3 element table使用插槽slot方式：#default=&quot;scope&quot;</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;el-table-column fixed=&quot;right&quot; width=&quot;150&quot; class-name=&quot;operate&quot; label=&quot;调整展示顺序&quot;&gt;
+    &lt;template #default=&quot;scope&quot;&gt;
+    &lt;el-button v-show=&quot;scope.$index != 0&quot; @click=&quot;addressUp(scope.row,scope.$index)&quot; type=&quot;text&quot; size=&quot;small&quot;&gt;上移
+    &lt;/el-button&gt;
+    &lt;el-button v-show=&quot;scope.$index == 0&quot; style=&quot;padding-left: 10px&quot; type=&quot;text&quot; size=&quot;small&quot;&gt; &lt;/el-button&gt;
+    &lt;span class=&quot;spac_line&quot; v-if=&quot;(scope.$index != 0) &amp;&amp; (tableData.length != scope.$index + 1)&quot;&gt; | &lt;/span&gt;
+    &lt;el-button v-show=&quot;tableData.length != scope.$index + 1&quot; type=&quot;text&quot;
+        @click=&quot;addressDown(scope.row,scope.$index)&quot; size=&quot;small&quot;&gt;下移&lt;/el-button&gt;
+    &lt;/template&gt;
+&lt;/el-table-column&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue/vue.html" class="prev">
+        Vue 3.0
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.34ec9d93.js" defer></script><script src="/assets/js/2.a95f0000.js" defer></script><script src="/assets/js/19.7654b033.js" defer></script>
+  </body>
+</html>

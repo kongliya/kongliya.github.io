@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webpack配置多环境变量 | 孔孔.</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="孔孔's blog.">
+    <link rel="preload" href="/assets/css/0.styles.abfd12c2.css" as="style"><link rel="preload" href="/assets/js/app.34ec9d93.js" as="script"><link rel="preload" href="/assets/js/2.a95f0000.js" as="script"><link rel="preload" href="/assets/js/9.4eb3a41a.js" as="script"><link rel="prefetch" href="/assets/js/10.e4f2fbec.js"><link rel="prefetch" href="/assets/js/11.c70c3046.js"><link rel="prefetch" href="/assets/js/12.a2f0dd35.js"><link rel="prefetch" href="/assets/js/13.025223fe.js"><link rel="prefetch" href="/assets/js/14.99ba377c.js"><link rel="prefetch" href="/assets/js/15.48cbe60c.js"><link rel="prefetch" href="/assets/js/16.e31d64ea.js"><link rel="prefetch" href="/assets/js/17.d46d467d.js"><link rel="prefetch" href="/assets/js/18.2f2851d0.js"><link rel="prefetch" href="/assets/js/19.7654b033.js"><link rel="prefetch" href="/assets/js/20.ffe15c90.js"><link rel="prefetch" href="/assets/js/21.e9d52d01.js"><link rel="prefetch" href="/assets/js/3.09ee304c.js"><link rel="prefetch" href="/assets/js/4.63b8f2b8.js"><link rel="prefetch" href="/assets/js/5.0edfab2f.js"><link rel="prefetch" href="/assets/js/6.bc8590aa.js"><link rel="prefetch" href="/assets/js/7.c83e90fb.js"><link rel="prefetch" href="/assets/js/8.98b1d132.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.abfd12c2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">孔孔.</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue 3.0
+</a></div><div class="nav-item"><a href="/nodejs/" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/other/" class="nav-link router-link-active">
+  Other
+</a></div><div class="nav-item"><a href="https://github.com/kongliya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue 3.0
+</a></div><div class="nav-item"><a href="/nodejs/" class="nav-link">
+  Node.js
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/other/" class="nav-link router-link-active">
+  Other
+</a></div><div class="nav-item"><a href="https://github.com/kongliya" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/other/" aria-current="page" class="sidebar-link">一些小东西</a></li><li><a href="/other/http.html" class="sidebar-link">网络协议一些东西</a></li><li><a href="/other/vue.html" class="sidebar-link">Vue面试题总结</a></li><li><a href="/other/webrtc.html" class="sidebar-link">WebRTC</a></li><li><a href="/other/linux.html" class="sidebar-link">linux简单命令记录</a></li><li><a href="/other/angular.html" class="sidebar-link">angular4配置环境变量</a></li><li><a href="/other/flutter.html" class="sidebar-link">flutter</a></li><li><a href="/other/webpack.html" aria-current="page" class="active sidebar-link">webpack配置多环境变量</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="webpack配置多环境变量"><a href="#webpack配置多环境变量" class="header-anchor">#</a> webpack配置多环境变量</h1> <p>本文是基于一个老项目angular7配置的，可能会比较老，但是至少能用;<br>
+用的是webpack4;</p> <p>老规矩，先上目录结构吧;<br> <img src="/assets/img/webpack.2600867b.png" alt="webpack配置"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/other/flutter.html" class="prev">
+        flutter
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.34ec9d93.js" defer></script><script src="/assets/js/2.a95f0000.js" defer></script><script src="/assets/js/9.4eb3a41a.js" defer></script>
+  </body>
+</html>
